@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WanderVista — Travel & Tourism</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <div class="brand">
+          <div class="logo">W</div>
+          <div>
+            <div style="font-weight:800">WanderVista</div>
+            <div style="font-size:12px;color:var(--muted)">Explore. Dream. Discover.</div>
+          </div>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div style="display:flex;gap:12px;align-items:center">
+          <a class="cta" href="#packages">Explore</a>
+          <button class="hamburger" id="hb">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-card fade-in">
+          <div class="eyebrow">Trusted by 30,000+ travelers</div>
+          <h1>Find your next unforgettable trip</h1>
+          <p class="lead">Handcrafted itineraries, best price guarantee and real local guides.</p>
+
+          <div class="search">
+            <input id="searchInput" type="search" placeholder="Search destinations..." aria-label="Search destinations">
+            <button id="searchBtn">Search</button>
+          </div>
+
+          <div class="highlights">
+            <div class="pill">Custom packages</div>
+            <div class="pill">24/7 support</div>
+            <div class="pill">Free cancellation</div>
+          </div>
+        </div>
+
+        <div class="hero-image fade-in"
+          style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600');">
+        </div>
+      </section>
+
+      <!-- DESTINATIONS -->
+      <section id="destinations">
+        <div class="section-title">
+          <h2>Popular Destinations</h2>
+        </div>
+        <div class="grid dest-grid">
+          <article class="dest-card fade-in">
+            <img src="https://images.unsplash.com/photo-1508264165352-258a6a9797aa?q=80&w=1600" alt="Santorini">
+            <div class="dest-body">
+              <div class="dest-title">Santorini, Greece</div>
+              <div class="muted">Sunset cliffs, whitewashed homes and sea views.</div>
+            </div>
+          </article>
+
+          <article class="dest-card fade-in">
+            <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?q=80&w=1600" alt="Bali">
+            <div class="dest-body">
+              <div class="dest-title">Bali, Indonesia</div>
+              <div class="muted">Beaches, temples and rice terraces.</div>
+            </div>
+          </article>
+
+          <article class="dest-card fade-in">
+            <img src="https://images.unsplash.com/photo-1486591978090-4b1e3f2b3f8a?q=80&w=1600" alt="Manali">
+            <div class="dest-body">
+              <div class="dest-title">Manali, India</div>
+              <div class="muted">Himalayan valleys and adventure sports.</div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- PACKAGES -->
+      <section id="packages">
+        <div class="section-title">
+          <h2>Recommended Packages</h2>
+        </div>
+        <div class="grid packages">
+          <div class="package fade-in">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:800">Bali Escape</div>
+                <div class="muted">5 days • Hotels & transfers</div>
+              </div>
+              <div class="price">₹24,999</div>
+            </div>
+            <p class="muted">Surf, temples and relaxed island days.</p>
+            <div class="btn-group">
+              <button class="btn" data-package="Bali Escape">Book Now</button>
+              <button class="btn" onclick="previewPackage('Bali Escape')">Details</button>
+            </div>
+          </div>
+
+          <div class="package fade-in">
+            <div style="display:flex;justify-content:space-between;align-items:center">
+              <div>
+                <div style="font-weight:800">Himalayan Adventure</div>
+                <div class="muted">7 days • Trek & Sightseeing</div>
+              </div>
+              <div class="price">₹18,499</div>
+            </div>
+            <p class="muted">Guided treks, cozy guesthouses and local cuisines.</p>
+            <div class="btn-group">
+              <button class="btn" data-package="Himalayan Adventure">Book Now</button>
+              <button class="btn" onclick="previewPackage('Himalayan Adventure')">Details</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section id="gallery">
+        <div class="section-title">
+          <h2>Photo Gallery</h2>
+        </div>
+        <div class="grid gallery">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1600" alt="img1">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600" alt="img2">
+          <img src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=80&w=1600" alt="img3">
+          <img src="https://images.unsplash.com/photo-1482192596544-9eb780fc7f66?q=80&w=1600" alt="img4">
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact">
+        <div class="section-title">
+          <h2>Get in touch</h2>
+        </div>
+        <form id="contactForm" class="hero-card fade-in">
+          <input class="form-control" name="name" placeholder="Your name" required>
+          <input class="form-control" name="email" type="email" placeholder="Email" required>
+          <textarea class="form-control" name="message" placeholder="Your message..." rows="4" required></textarea>
+          <button type="submit" class="cta">Send message</button>
+        </form>
+      </section>
+
+      <footer>
+        <div style="font-weight:800">WanderVista</div>
+        <div class="muted">© 2025 WanderVista. All rights reserved.</div>
+      </footer>
+    </main>
+  </div>
+
+  <div id="modalBackdrop" class="modal-backdrop">
+    <div class="modal">
+      <div class="modal-header">
+        <div id="modalTitle" style="font-weight:800">Book Package</div>
+        <button id="closeModal">✕</button>
+      </div>
+      <form id="bookingForm">
+        <input name="name" required class="form-control" placeholder="Full name">
+        <input name="phone" required class="form-control" placeholder="Phone number">
+        <input name="email" type="email" required class="form-control" placeholder="Email address">
+        <input name="package" id="packageInput" readonly class="form-control" placeholder="Selected package">
+        <button type="submit" class="cta">Confirm Booking</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
